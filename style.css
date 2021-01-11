@@ -3,14 +3,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 100;
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("moto-bg.jpg");
+	background-size: cover;
+    background-position: center;
     color: blanchedalmond;
+    background-color: #070707E0;
+    position: relative;
+    margin: 0;
+}
+
+body::after {
+    background-color: #070707E0;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .center {
     text-align: center;
+}
+
+.uc {
+    text-transform: uppercase;
+}
+.pt-2 {
+    padding-top: 2em;
 }
