@@ -39,3 +39,8 @@ body::after {
 .pt-2 {
     padding-top: 2em;
 }
+
+.logo .text {
+    border: aqua 1px solid;
+    fill:#05c;
+}
